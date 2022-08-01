@@ -1,0 +1,36 @@
+-- category
+insert into category (name) values ('Buku Islam');
+insert into category (name) values ('Buku Rohani Kristen');
+insert into category (name) values ('Buku Anak');
+insert into category (name) values ('Buku Sekolah');
+insert into category (name) values ('Bahasa & Kamus');
+insert into category (name) values ('Biografi & Memoar');
+insert into category (name) values ('Bisnis & Keuangan');
+insert into category (name) values ('Hobi & Keterampilan');
+insert into category (name) values ('Hukum');
+insert into category (name) values ('Kedokteran & Kesehatan');
+insert into category (name) values ('Komputer & Internet');
+insert into category (name) values ('Novel & Sastra');
+insert into category (name) values ('Pertanian & Lingkungan Hidup');
+insert into category (name) values ('Pendidikan & Keguruan');
+insert into category (name) values ('Psikologi & Pengembangan Diri');
+insert into category (name) values ('Referensi & Ensiklopedi');
+insert into category (name) values ('Sejarah, Budaya & Filsafat');
+insert into category (name) values ('Sosial & Politik');
+insert into category (name) values ('Teknik & Ilmu Pengetahuan');
+insert into category (name) values ('Buku Umum');
+insert into category (name) values ('Buku Obral');
+
+-- author
+insert into authors (name,penname,gender) values ('Andrea Hirata','Andrea Hirata','male');
+insert into authors (name,penname,gender) values ('Tere Liye','Tere Liye','male');
+insert into authors (name,penname,gender) values ('Haidar Musyafa','Haidar Musyafa','female');
+insert into authors (name,penname,gender) values ('Raditya Dika','Raditya Dika','male');
+insert into authors (name,penname,gender) values ('Ika Natassa','Ika Natassa','female');
+insert into authors (name,penname,gender) values ('Eka Kurniawan','Eka Kurniawan','male');
+insert into authors (name,penname,gender) values ('Valerie Patkar','Valerie Patkar','male');
+insert into authors (name,penname,gender) values ('Erisca Febriani','Erisca Febriani','female');
+insert into authors (name,penname,gender) values ('Pramodyea Ananta Toer','Pramodyea Ananta Toer','female');
+insert into authors (name,penname,gender) values ('Ahmad Fuadi','Ahmad Fuadi','male');
+
+-- books
