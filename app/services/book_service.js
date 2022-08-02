@@ -44,6 +44,29 @@ class BookService {
         const { rows } = await db.query(sql, []);
         return rows
     }
+
+    async getBookFilter(params) {
+        let arr = []
+        let where = ''
+        if (params.author_name) {
+            arr.push(`%${params.author_name.toLowerCase()}%`)
+            where += where ? ` and ` : ` where `
+            where += `lower(c.author_name) like $${arr.length}`
+
+        }
+        if (params.category_name) {
+            arr.push(`%${params.category_name.toLowerCase()}%`)
+            where += where ? ` and ` : ` where `
+            where += `lower(b.category_name) like $${arr.length}`
+        }
+        const sql = `select b.category_name,c.author_name,c.penname,c.gender,a.* from books a 
+        left join category b on a.id_category=b.id_category
+        left join authors c on a.id_author=c.id_author 
+        ${where}`
+
+        const { rows } = await db.query(sql, arr);
+        return rows
+    }
 }
 
 module.exports = { BookService }

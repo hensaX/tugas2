@@ -86,7 +86,18 @@ const getBookAll = async (req, res) => {
     }
 
 }
+const getBookFilter = async (req, res) => {
+    const { author_name, category_name } = req.query;
+
+    try {
+        const rows = await BookSv.getBookFilter({ author_name, category_name })
+        stdMsg.msg(res, req, 200, 'R00', { message: 'Successfull', data: rows })
+    } catch (err) {
+        stdMsg.msg(res, req, 400, 'R99', { message: err.message })
+    }
+
+}
 
 
 
-module.exports = { addBook, editBook, deleteBook, getBookById, getBookAll }
+module.exports = { addBook, editBook, deleteBook, getBookById, getBookAll, getBookFilter }
