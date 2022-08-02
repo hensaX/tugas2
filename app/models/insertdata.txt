@@ -34,3 +34,11 @@ insert into authors (name,penname,gender) values ('Pramodyea Ananta Toer','Pramo
 insert into authors (name,penname,gender) values ('Ahmad Fuadi','Ahmad Fuadi','male');
 
 -- books
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Cantik Itu Luka','2001','30000','6');
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Laut Bercerita','2002','32000','11');
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Bumi Manusia','2005','34000','12');
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Sumur','2000','36000','6');
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Laskar Pelangi','2010','38000','1');
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Si Putih','2012','40000','2');
+insert into books (id_category,title,pub_year,price,id_author) values ('12','Kambing Jantan','2015','42000','4');
+insert into books (id_category,title,pub_year,price,id_author) values ('11','Head First Java','2015','44000','13');
