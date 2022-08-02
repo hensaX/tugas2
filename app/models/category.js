@@ -4,7 +4,7 @@ db.serialize(function () {
 
     let sql = `CREATE TABLE IF NOT EXISTS category(
         id_category INTEGER PRIMARY KEY AUTOINCREMENT,
-        name varchar(254) not null,
+        category_name varchar(254) not null,
         created text default (datetime('now','localtime')),
         updated text default (datetime('now','localtime'))
     );`;
