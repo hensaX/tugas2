@@ -4,6 +4,7 @@ Cara Menggunakan :
 
 - Clone github
 - Jalankan npm install
+- dokumentasi dg postman di Tugas2.postman_collection.json
 - Jwt di setting expired 1 tahun, settingan ada di .env
   user jwt : (user : hendra, password : 123)
   active token jwt :
